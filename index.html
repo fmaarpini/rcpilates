@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RC Pilates Especializado | Pilates em Colatina ES | Renatha Cruz</title>
+
+<link rel="icon" href="imagens/favicon.png">
+
+<meta name="description" content="Studio de Pilates em Colatina ES com atendimento especializado. Melhore sua postura, alivie dores e fortaleça seu corpo com Pilates.">
+<meta name="keywords" content="pilates colatina, pilates em colatina es, studio de pilates colatina, pilates especializado colatina, pilates terapêutico, pilates para coluna, pilates postura, renatha cruz pilates, curso de pilates colatina">
+<meta name="robots" content="index, follow">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- AOS para animações -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins', sans-serif;}
+body{background:#f7f7f7;color:#333;scroll-behavior:smooth;}
+header{background:#fffaf5;position:fixed;width:100%;top:0;box-shadow:0 3px 10px rgba(0,0,0,0.08);z-index:999;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 8%;}
+.logo img{height:65px;}
+nav ul{display:flex;list-style:none;gap:30px;}
+nav ul li a{text-decoration:none;color:#594234;font-weight:500;transition:.3s;}
+nav ul li a:hover{color:#8a5a44;}
+.menu-toggle{display:none;font-size:28px;cursor:pointer;}
+.home{height:100vh;background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('imagens/banner.webp');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:20px;}
+.home h1{font-size:55px;margin-bottom:20px;}
+.home p{font-size:20px;margin-bottom:30px;}
+.btn{background:#8a5a44;color:white;padding:14px 32px;border-radius:8px;text-decoration:none;display:inline-block;font-weight:500;transition:.3s;}
+.btn:hover{background:#6e4432;transform:translateY(-2px);}
+section{padding:110px 8%;}
+.section-title{text-align:center;margin-bottom:60px;}
+.section-title h2{color:#8a5a44;font-size:36px;}
+#beneficios{background:white;}
+.beneficios-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.card{background:#fffaf5;padding:35px;border-radius:12px;text-align:center;transition:.3s;}
+.card:hover{transform:translateY(-8px);box-shadow:0 15px 30px rgba(0,0,0,0.08);}
+.renatha{background:white;}
+.renatha-container{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.renatha img{width:80%;max-width:380px;border-radius:12px;display:block;margin:auto;}
+.renatha h2{color:#8a5a44;font-size:34px;}
+.renatha h4{color:#9b7356;margin-bottom:15px;font-weight:400;}
+.quem{background:#fffaf5;text-align:center;}
+.quem p{max-width:800px;margin:auto;font-size:18px;color:#666;margin-top:20px;}
+.instagram-feed{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.instagram-feed a{
+display:block;
+overflow:hidden;
+border-radius:10px;
+}
+
+.instagram-feed img{
+width:100%;
+height:220px;
+object-fit:cover;
+transition:.4s;
+}
+
+.instagram-feed img:hover{
+transform:scale(1.08);
+}
+.mapa{background:#fffaf5;padding-top:80px;}
+.mapa iframe{width:100%;height:400px;border:none;border-radius:10px;}
+#curso{background:#fffaf5;padding:80px 8%;}
+.curso-container{max-width:1100px;margin:auto;text-align:center;}
+.curso-titulo{font-size:40px;color:#8a5a44;}
+.curso-subtitulo{color:#666;margin-bottom:40px;}
+.curso-video iframe{width:100%;height:420px;border:none;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.15);}
+.curso-beneficios{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin:50px 0;}
+.beneficio{background:white;padding:30px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,0.08);}
+.beneficio i{font-size:35px;color:#8a5a44;margin-bottom:15px;}
+.depoimentos{margin:60px 0;}
+.depoimentos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.depoimento{background:white;padding:25px;border-radius:10px;box-shadow:0 8px 25px rgba(0,0,0,0.08);font-style:italic;}
+.garantia{background:white;padding:40px;border-radius:12px;margin-bottom:60px;box-shadow:0 10px 25px rgba(0,0,0,0.08);}
+.curso-preco{background:white;padding:50px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,0.12);}
+.valor{font-size:48px;color:#594234;font-weight:600;margin:15px 0;}
+.btn-comprar-curso{background:#25D366;color:white;padding:18px 40px;border-radius:10px;text-decoration:none;font-size:18px;font-weight:600;display:inline-block;}
+.btn-comprar-curso:hover{background:#1ebe5b;transform:translateY(-2px);}
+.google-reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin:50px 0;}
+.google-reviews .review{background:white;padding:25px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.08);}
+.google-reviews .stars{color:#FFD700;font-size:18px;margin-bottom:10px;}
+.whatsapp{position:fixed;bottom:25px;right:25px;background:#25D366;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;box-shadow:0 8px 25px rgba(0,0,0,0.25);z-index:999;text-decoration:none;}
+.whatsapp i{color:white;font-size:30px;}
+footer{background:white;text-align:center;padding:40px;font-size:14px;color:#666;}
+@media(max-width:900px){nav ul{display:none;flex-direction:column;background:white;position:absolute;top:70px;right:0;width:220px;padding:20px;}nav ul.active{display:flex;}.menu-toggle{display:block;}.renatha-container{grid-template-columns:1fr;}.home h1{font-size:38px;}}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo"><img src="imagens/logo.jpg" alt="RC Pilates"></div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul id="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#beneficios">Benefícios</a></li>
+<li><a href="#renatha">Renatha Cruz</a></li>
+<li><a href="#quem">Quem Somos</a></li>
+<li><a href="#instagram">Instagram</a></li>
+<li><a href="#mapa">Mapa</a></li>
+<li><a href="#curso">Curso</a></li>
+<li><a href="#reviews">Avaliações</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home" data-aos="fade-up">
+<div>
+<h1>Pilates Especializado em Colatina</h1>
+<p>Fortaleça seu corpo, melhore sua postura e viva com mais equilíbrio.</p>
+<a class="btn" href="https://wa.me/5527999577846">Agendar Aula</a>
+</div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section id="beneficios" data-aos="fade-up">
+<div class="section-title"><h2>Benefícios do Pilates</h2></div>
+<div class="beneficios-grid">
+<div class="card" data-aos="zoom-in"><h3>Corrige a postura</h3><p>Melhora o alinhamento corporal.</p></div>
+<div class="card" data-aos="zoom-in" data-aos-delay="100"><h3>Mais flexibilidade</h3><p>Aumenta mobilidade articular.</p></div>
+<div class="card" data-aos="zoom-in" data-aos-delay="200"><h3>Previne dores</h3><p>Fortalece músculos e articulações.</p></div>
+<div class="card" data-aos="zoom-in" data-aos-delay="300"><h3>Para todas idades</h3><p>Prática segura e adaptável.</p></div>
+</div>
+</section>
+
+<!-- RENATHA -->
+<section id="renatha" class="renatha" data-aos="fade-right">
+<div class="renatha-container">
+<div><img src="imagens/rc.png" alt="Renatha Cruz"></div>
+<div><h2>Renatha Cruz</h2><h4>Especialista em Pilates Clínico</h4><p>Profissional dedicada ao cuidado do corpo e da saúde através do método Pilates.</p><a class="btn" href="https://wa.me/5527999577846">Agendar Aula</a></div>
+</div>
+</section>
+
+<!-- INSTAGRAM -->
+<section id="instagram" data-aos="fade-up">
+<div class="section-title"><h2>Instagram</h2></div>
+<div class="instagram-feed" id="instagram-feed"></div>
+</section>
+
+<script>
+
+async function carregarInstagram(){
+
+const feed = document.getElementById("instagram-feed");
+
+const url = "https://www.instagram.com/pilates.rc/?__a=1&__d=dis";
+
+try{
+
+const response = await fetch(url);
+const data = await response.json();
+
+const posts = data.graphql.user.edge_owner_to_timeline_media.edges;
+
+posts.slice(0,9).forEach(post => {
+
+const img = post.node.display_url;
+const link = "https://www.instagram.com/p/" + post.node.shortcode;
+
+const a = document.createElement("a");
+a.href = link;
+a.target = "_blank";
+
+const image = document.createElement("img");
+image.src = img;
+
+a.appendChild(image);
+feed.appendChild(a);
+
+});
+
+}catch(error){
+
+feed.innerHTML = `
+<p style="text-align:center">
+<a href="https://www.instagram.com/pilates.rc/" target="_blank">
+Ver Instagram
+</a>
+</p>
+`;
+
+}
+
+}
+
+carregarInstagram();
+
+</script>
+
+<!-- MAPA -->
+<section id="mapa" class="mapa" data-aos="fade-up">
+<div class="section-title"><h2>Onde Estamos</h2></div>
+<iframe src="https://www.google.com/maps?q=RC+Pilates+Especializado+Colatina&output=embed"></iframe>
+</section>
+
+<!-- CURSO -->
+<section id="curso" data-aos="fade-up">
+<div class="curso-container">
+<h2 class="curso-titulo">Curso Profissional de Pilates</h2>
+<p class="curso-subtitulo">Aprenda Pilates do zero ao avançado e transforme sua carreira.</p>
+<div class="curso-video"><iframe src="https://www.youtube.com/embed/NuX9Ytilw3U"></iframe></div>
+
+<div class="curso-beneficios">
+<div class="beneficio" data-aos="fade-up"><i class="fa-solid fa-certificate"></i><h3>Certificado Profissional</h3></div>
+<div class="beneficio" data-aos="fade-up" data-aos-delay="100"><i class="fa-solid fa-user-doctor"></i><h3>Conteúdo Clínico</h3></div>
+<div class="beneficio" data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-dumbbell"></i><h3>Aulas Práticas</h3></div>
+<div class="beneficio" data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-headset"></i><h3>Suporte Completo</h3></div>
+</div>
+
+<div class="depoimentos" data-aos="fade-up">
+<h3>O que nossos alunos dizem</h3>
+<div class="depoimentos-grid" id="depoimentos">
+<!-- JS vai puxar depoimentos -->
+</div>
+</div>
+
+<div class="garantia" data-aos="fade-up">
+<i class="fa-solid fa-shield-halved"></i>
+<h3>Garantia de 7 dias</h3>
+<p>Se dentro de 7 dias você achar que o curso não é para você, devolvemos 100% do seu dinheiro.</p>
+</div>
+
+<div class="curso-preco" data-aos="fade-up">
+<h3>Invista na sua carreira</h3>
+<div class="valor">R$ 1.497</div>
+<p>ou 12x de R$149 no cartão</p>
+<a class="btn-comprar-curso" href="https://sun.eduzz.com/dfwrrcbj" target="_blank">Quero garantir minha vaga</a>
+<p>⚠ Últimas vagas disponíveis para a próxima turma</p>
+</div>
+</section>
+
+<!-- GOOGLE REVIEWS -->
+<section id="reviews" data-aos="fade-up">
+<div class="section-title"><h2>Avaliações de Clientes</h2></div>
+<div class="google-reviews" id="google-reviews"></div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5527999577846" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+<footer>
+<p>COPYRIGHT 2026. Todos os direitos reservados.<br>Desenvolvido por <strong>FMAINOVA</strong></p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+AOS.init({duration:1000});
+
+// Menu toggle
+function toggleMenu(){document.getElementById("menu").classList.toggle("active");}
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+anchor.addEventListener('click',function(e){
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+});
+});
+
+// Placeholder Instagram posts (substituir por API real)
+const instagramFeed = document.getElementById('instagram-feed');
+for(let i=1;i<=6;i++){
+const img=document.createElement('img');
+img.src=`https://via.placeholder.com/400x400?text=Post+${i}`;
+instagramFeed.appendChild(img);
+}
+
+// Placeholder Google Reviews (substituir por API real)
+const reviewsData = [
+{name:"Ana Paula",stars:5,text:"Curso incrível! Aprendi muito e hoje já trabalho com Pilates."},
+{name:"Marcos Silva",stars:5,text:"Didática excelente e conteúdo muito completo."},
+{name:"Juliana Costa",stars:5,text:"Valeu cada centavo. Recomendo para quem quer entrar na área."}
+];
+const reviewsContainer = document.getElementById('google-reviews');
+reviewsData.forEach(r=>{
+const div=document.createElement('div');
+div.classList.add('review');
+div.innerHTML=`<div class="stars">${'★'.repeat(r.stars)}</div><strong>${r.name}</strong><p>${r.text}</p>`;
+reviewsContainer.appendChild(div);
+});
+</script>
+</body>
+</html>
