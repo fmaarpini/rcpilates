@@ -534,6 +534,69 @@ font-size:15px;
 
 }
 
+.contato-rodape{
+background:#fffaf5;
+padding:70px 8%;
+margin-top:60px;
+}
+
+.rodape-container{
+display:grid;
+grid-template-columns:220px 1fr 1fr 1fr;
+gap:40px;
+max-width:1100px;
+margin:auto;
+align-items:flex-start;
+}
+
+.rodape-logo img{
+width:180px;
+}
+
+.rodape-logo{
+display:flex;
+align-items:center;
+}
+
+.rodape-coluna h3{
+color:#8a5a44;
+margin-bottom:15px;
+}
+
+.rodape-coluna p{
+margin-bottom:10px;
+color:#594234;
+}
+
+.rodape-coluna a{
+text-decoration:none;
+color:#594234;
+}
+
+.rodape-coluna a:hover{
+color:#8a5a44;
+}
+
+.rodape-coluna i{
+color:#25D366;
+margin-right:8px;
+}
+
+@media(max-width:900px){
+
+.rodape-container{
+grid-template-columns:1fr;
+text-align:center;
+gap:30px;
+}
+
+.rodape-logo img{
+width:160px;
+margin:auto;
+}
+
+}
+
 </style>
 </head>
 
@@ -683,6 +746,55 @@ Nossos cursos têm garantia exclusiva de 7 dias, satisfação garantida<br>
 <section id="reviews" data-aos="fade-up">
 <div class="section-title"><h2>Avaliações de Clientes</h2></div>
 <div class="google-reviews" id="google-reviews"></div>
+</section>
+
+<!-- CONTATO RODAPE  -->
+<section class="contato-rodape">
+
+<div class="rodape-container">
+
+<div class="rodape-logo">
+<img src="imagens/logo.png" alt="RC Pilates">
+</div>
+
+<div class="rodape-coluna">
+<h3>Entre em Contato</h3>
+
+<p>
+<a href="https://wa.me/5527999577846" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> (27) 99957-7846
+</a>
+</p>
+
+<p>contato@rcpilates.com.br</p>
+</div>
+
+<div class="rodape-coluna">
+<h3>Institucional</h3>
+
+<p><a href="#beneficios">Benefícios</a></p>
+<p><a href="#renatha">Renatha Cruz</a></p>
+<p><a href="#curso">Curso</a></p>
+</div>
+
+<div class="rodape-coluna">
+<h3>Endereço</h3>
+
+<p>
+R. Michel Dala, 30<br>
+Centro, Colatina - ES
+</p>
+
+<p>
+<a href="https://www.rcpilates.com.br" target="_blank">
+www.rcpilates.com.br
+</a>
+</p>
+
+</div>
+
+</div>
+
 </section>
 
 <a class="whatsapp" href="https://wa.me/5527999577846" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
